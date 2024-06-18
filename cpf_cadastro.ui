@@ -1,0 +1,935 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>607</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 0, 127);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 5px;</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_cadastro">
+       <attribute name="title">
+        <string>Cadastro</string>
+       </attribute>
+       <widget class="QFrame" name="frame_pes_cpf">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>361</width>
+          <height>69</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="txt_cpf_pesquisa">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 0);
+
+font: 87 9pt &quot;Arial Black&quot;;</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="placeholderText">
+            <string>Digite o CPF aqui</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="pesquisa_label_cpf">
+           <property name="font">
+            <font>
+             <family>Arial Black</family>
+             <pointsize>9</pointsize>
+             <weight>10</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 87 9pt &quot;Arial Black&quot;;
+color: rgb(85, 0, 255);</string>
+           </property>
+           <property name="text">
+            <string>Pesquisa por CPF</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QFrame" name="frame_main">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>110</y>
+          <width>751</width>
+          <height>401</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 87 7pt &quot;Arial Black&quot;;
+background-color: rgb(160, 160, 160);
+border-radius: 5px;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLineEdit" name="txt_nome_mae">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>100</y>
+           <width>720</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 87 7pt &quot;Arial Black&quot;;
+background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="placeholderText">
+          <string>Nome da Mãe</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txt_logradouro">
+         <property name="geometry">
+          <rect>
+           <x>11</x>
+           <y>140</y>
+           <width>600</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 87 7pt &quot;Arial Black&quot;;
+background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="placeholderText">
+          <string>Logradouro</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txt_municipio">
+         <property name="geometry">
+          <rect>
+           <x>13</x>
+           <y>220</y>
+           <width>410</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 87 7pt &quot;Arial Black&quot;;
+background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="placeholderText">
+          <string>Município</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txt_uf">
+         <property name="geometry">
+          <rect>
+           <x>430</x>
+           <y>220</y>
+           <width>91</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 87 7pt &quot;Arial Black&quot;;
+background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="placeholderText">
+          <string>UF</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txt_data_insta">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>300</y>
+           <width>161</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 87 7pt &quot;Arial Black&quot;;
+background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="placeholderText">
+          <string>Data da Instalação</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txt_aceite">
+         <property name="geometry">
+          <rect>
+           <x>13</x>
+           <y>300</y>
+           <width>113</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 87 7pt &quot;Arial Black&quot;;
+background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="placeholderText">
+          <string>Aceite</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txt_numero">
+         <property name="geometry">
+          <rect>
+           <x>618</x>
+           <y>140</y>
+           <width>113</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 87 7pt &quot;Arial Black&quot;;
+background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="placeholderText">
+          <string>Nº</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txt_complemento">
+         <property name="geometry">
+          <rect>
+           <x>11</x>
+           <y>180</y>
+           <width>550</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 87 7pt &quot;Arial Black&quot;;
+background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="placeholderText">
+          <string>Complemento</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txt_data_nasc">
+         <property name="geometry">
+          <rect>
+           <x>592</x>
+           <y>60</y>
+           <width>141</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 87 7pt &quot;Arial Black&quot;;
+background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="placeholderText">
+          <string>Data Nascimento</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txt_bairro">
+         <property name="geometry">
+          <rect>
+           <x>570</x>
+           <y>180</y>
+           <width>160</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 87 7pt &quot;Arial Black&quot;;
+background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="placeholderText">
+          <string>Bairro</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txt_cpf">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>140</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 87 7pt &quot;Arial Black&quot;;
+background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="placeholderText">
+          <string>CPF</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txt_tel_cel">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>260</y>
+           <width>381</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 87 7pt &quot;Arial Black&quot;;
+background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="placeholderText">
+          <string>Tel/Cel</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txt_nome">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>20</y>
+           <width>571</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 87 7pt &quot;Arial Black&quot;;
+background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="placeholderText">
+          <string>Nome</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txt_rg">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>60</y>
+           <width>170</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 87 7pt &quot;Arial Black&quot;;
+background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="placeholderText">
+          <string>RG</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txt_orgao_exp">
+         <property name="geometry">
+          <rect>
+           <x>190</x>
+           <y>60</y>
+           <width>200</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 87 7pt &quot;Arial Black&quot;;
+background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="placeholderText">
+          <string>Orgão Expeditor</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txt_email">
+         <property name="geometry">
+          <rect>
+           <x>399</x>
+           <y>260</y>
+           <width>330</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 87 7pt &quot;Arial Black&quot;;
+background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="placeholderText">
+          <string>E-mail</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txt_cep">
+         <property name="geometry">
+          <rect>
+           <x>529</x>
+           <y>220</y>
+           <width>200</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 87 7pt &quot;Arial Black&quot;;
+background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="placeholderText">
+          <string>CEP</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txt_data_exp">
+         <property name="geometry">
+          <rect>
+           <x>400</x>
+           <y>60</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 87 7pt &quot;Arial Black&quot;;
+background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="placeholderText">
+          <string> Data Expedição</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btn_salvar">
+         <property name="geometry">
+          <rect>
+           <x>560</x>
+           <y>350</y>
+           <width>160</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>160</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial Black</family>
+           <pointsize>9</pointsize>
+           <weight>10</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton:hover{
+	
+	
+	
+	background-color: rgb(72, 144, 0);
+
+	border-radius: 15px;
+	
+	color: #fff
+}
+
+QPushButton{
+	
+			
+	
+	
+	font: 87 9pt &quot;Arial Black&quot;;	
+	
+	
+	background-color: rgb(0, 255, 127);
+
+	border-radius: 15px;
+	
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Salvar</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="label_info_rodape_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>530</y>
+          <width>201</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 25 9pt &quot;Yu Gothic&quot;;</string>
+        </property>
+        <property name="text">
+         <string>© Puritoka Zaybatsu 2024</string>
+        </property>
+       </widget>
+       <widget class="QFrame" name="frame_pes_cep">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>20</y>
+          <width>381</width>
+          <height>69</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="txt_cep_pesquisa">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 0);
+
+font: 87 9pt &quot;Arial Black&quot;;</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="placeholderText">
+            <string>Digite o CEP aqui</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="pesquisa_label_cep">
+           <property name="font">
+            <font>
+             <family>Arial Black</family>
+             <pointsize>9</pointsize>
+             <weight>10</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 87 9pt &quot;Arial Black&quot;;
+color: rgb(85, 0, 255);</string>
+           </property>
+           <property name="text">
+            <string>Pesquisa por CEP</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_consulta">
+       <attribute name="title">
+        <string>Consulta</string>
+       </attribute>
+       <widget class="QFrame" name="frame_cadastro">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>110</y>
+          <width>751</width>
+          <height>441</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QTableWidget" name="tabela_cadastro">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>11</y>
+           <width>731</width>
+           <height>401</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QHeaderView::section{
+	
+	background-color: rgb(148, 148, 148);
+
+	color: rgb(255, 255, 255);	
+
+	font: 10pt &quot;MS Shell Dlg 2&quot;;
+}
+
+QTableWidget{
+
+	
+	
+	background-color: rgb(247, 255, 202);
+
+}</string>
+         </property>
+         <column>
+          <property name="text">
+           <string>CPF</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Nome</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>RG</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Orgão Expeditor</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Data da Expedição</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Data Nascimento</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Nome da Mãe</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Logradouro</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>N°</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Complemento</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Bairro</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Município</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>UF</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>CEP</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Tel/Cel</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>E-Mail</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Aceite</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Data Instalação</string>
+          </property>
+         </column>
+        </widget>
+        <widget class="QLabel" name="label_info_rodape_4">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>420</y>
+           <width>201</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 25 9pt &quot;Yu Gothic&quot;;</string>
+         </property>
+         <property name="text">
+          <string>© Puritoka Zaybatsu 2024</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_top">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>751</width>
+          <height>80</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>30</y>
+           <width>721</width>
+           <height>32</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLabel" name="label_info">
+            <property name="styleSheet">
+             <string notr="true">font: 87 10pt &quot;Arial Black&quot;;
+color: rgb(0, 85, 255);</string>
+            </property>
+            <property name="text">
+             <string>Listagem de Clientes</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_excel">
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial Black</family>
+              <pointsize>8</pointsize>
+              <weight>10</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton:hover{	
+	
+	background-color: rgb(171, 255, 165);	
+
+	border-radius: 15px;	
+
+	color: #fff
+}
+
+QPushButton{
+	
+	font: 87 8pt &quot;Arial Black&quot;;
+	
+	background-color: rgb(66, 206, 41);	
+
+	border-radius: 15px;
+	
+}</string>
+            </property>
+            <property name="text">
+             <string>Gerar Excel</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_alterar">
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton:hover{	
+	
+	
+	background-color: rgb(255, 211, 52);
+	
+	border-radius: 15px;
+	
+	color: #fff
+}
+
+QPushButton{
+	
+	font: 87 8pt &quot;Arial Black&quot;;	
+	
+	
+	background-color: rgb(255, 170, 0);
+
+	border-radius: 15px;
+	
+}</string>
+            </property>
+            <property name="text">
+             <string>Alterar</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_excluir">
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton:hover{		
+	
+;
+	background-color: rgb(255, 164, 164);
+
+	border-radius: 15px;	
+
+	color: #fff
+}
+
+QPushButton{
+	
+	font: 87 8pt &quot;Arial Black&quot;;		
+	
+	background-color: rgb(255, 120, 120);
+
+	border-radius: 15px;
+	
+}</string>
+            </property>
+            <property name="text">
+             <string>Excluir</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
